@@ -1,0 +1,109 @@
+body{
+    background: #e5cb9f !important;
+    height: 100vh;
+}
+.gradient-background {
+    background: radial-gradient(
+        #e5cb9f, #99c4cb, #68A7AD);
+    background-size: 180% 180%;
+    animation: gradient-animation 6s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.Selfie{
+    height: 10rem;
+    border-radius: 50%;
+}
+.lead{
+    font-family: 'Courier New', Courier, monospace;
+}
+.lead>span{
+    text-decoration: underline;
+}
+.contactLogo {
+    height: 2rem;
+    border-radius: 35%;
+    padding: 5px;
+}
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    gap: 2rem;
+    padding-bottom: 10px;
+}
+.Som{
+    flex: 1;
+    max-width: 400px;
+    min-width: 390px;
+    padding: 1vh;
+    margin: 1vh;
+}
+.Information>ul{
+    list-style-type: none;
+}
+@media (max-width:1250px){
+    .flexcontainer{
+        flex-direction: column;
+        height: 50%;
+        /* max-width: 20vh; */
+        gap: 4rem;
+        align-items: left;
+        justify-content: left;
+        text-align: left;
+        
+    }
+}
+.nav-link:hover{
+    background-color: #68A7AD;
+}
+.gridContainer {
+    height: 20vh;
+    width: 25vh;
+    background: #e5cb9f;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    /* margin:10% 30%; */
+}
+.box{
+    background: #eee4ab;
+    border-radius: 25%;
+}
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qualitem{
+    text-align: center;
+}
+.qualitem>ul{
+    list-style-type: none;
+    text-align: left;
+}
+.quallogo{
+    height: 8vh;
+    width: 10vh;
+    border-radius: 30%;
+}
+.qualitem>h2{
+    text-decoration: underline;
+    text-align: center;
+}
+footer{
+    bottom: 0;
+}
